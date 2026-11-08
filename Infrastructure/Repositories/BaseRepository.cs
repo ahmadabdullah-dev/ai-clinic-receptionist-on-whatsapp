@@ -2,12 +2,12 @@
 
 namespace Infrastructure.Repositories;
 
-public class BaseRepository<T> : IRepository<T> where T : class
+public class BaseRepository<T> : IBaseRepository<T> where T : class
 {
     protected readonly ApplicationDbContext Db;
     protected readonly DbSet<T> DbSet;
 
-    public Repository(ApplicationDbContext db)
+    public BaseRepository(ApplicationDbContext db)
     {
         Db = db;
         DbSet = db.Set<T>();
