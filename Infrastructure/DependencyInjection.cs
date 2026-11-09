@@ -33,6 +33,7 @@ namespace Infrastructure
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
+            services.AddScoped<IAdminRepository, AdminRepository>();
       
             services.AddDataProtection();
 
