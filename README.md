@@ -1,4 +1,4 @@
-# Digital Menu And POS System
+# AI Healthcare Receptionist on WhatsApp
 
 ## Apply Database Migrations
 
